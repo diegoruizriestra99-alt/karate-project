@@ -98,9 +98,8 @@ app.get('/api/inscripciones', async (req, res) => {
       res.json(r.rows);
     } else {
       const r = db.exec('SELECT * FROM inscripciones ORDER BY fecha_registro DESC');
-      if (!r.length) return res.json([]);
-      const cols = r[0].columns;
-      res.json(r[0].values.map(v => Object.fromEntries(cols.map((c, i) => [c, v[i]] print;))));
+      if (!r.length) return res.json([]);  const cols = r[0].columns;
+      res.json(r[0].values.map(v => Object.fromEntries(cols.map((c, i) => [c, v[i]))));
     }
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
