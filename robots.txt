@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /karate.html
+
+Sitemap: https://karate-project.onrender.com/sitemap.xml
