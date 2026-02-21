@@ -1,0 +1,5 @@
+node_modules/
+.env
+karate.db
+.gemini/
+package-lock.json

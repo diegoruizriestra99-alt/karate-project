@@ -1,0 +1,17 @@
+{
+    "name": "karate-backend",
+    "version": "1.0.0",
+    "description": "Servidor backend para el sitio web de Karate - Formulario de inscripción",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.0",
+        "sql.js": "^1.11.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}

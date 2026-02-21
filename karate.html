@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate Dojo - Historia, Estilos y Técnicas de Artes Marciales</title>
+    <meta name="description"
+        content="Aprende todo sobre el Karate: historia, estilos principales (Shotokan, Goju-ryu, Wado-ryu, Shito-ryu), katas y técnicas. Únete a nuestro dojo y comienza tu camino marcial.">
+    <meta name="keywords"
+        content="karate, artes marciales, dojo, shotokan, goju-ryu, wado-ryu, shito-ryu, katas, defensa personal, okinawa, japón">
+    <meta name="author" content="Karate Dojo">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Karate Dojo - El Camino de la Mano Vacía">
+    <meta property="og:description" content="Descubre la historia, filosofía y técnicas del arte marcial tradicional.">
+    <meta property="og:image" content="https://karate-dojo.onrender.com/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Karate Dojo - El Camino de la Mano Vacía">
+    <meta property="twitter:description"
+        content="Descubre la historia, filosofía y técnicas del arte marcial tradicional.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="sidebar-closed">
+
+    <div id="overlay" class="overlay"></div>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+
+    <nav>
+        <div class="logo">Karate-<span>Do</span></div>
+        <div class="nav-links" id="navLinks">
+            <button class="close-btn" onclick="toggleMenu()" aria-label="Close navigation">×</button>
+            <a href="#hero">Inicio</a>
+            <a href="#historia">Historia</a>
+            <div class="dropdown">
+                <button class="dropbtn">Estilos</button>
+                <div class="dropdown-content">
+                    <a href="#shotokan">Shotokan</a>
+                    <a href="#goju-ryu">Goju-ryu</a>
+                    <a href="#wado-ryu">Wado-ryu</a>
+                    <a href="#shito-ryu">Shito-ryu</a>
+                </div>
+            </div>
+            <a href="#inscripcion">Inscripción</a>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <h1>El Camino de la Mano Vacía</h1>
+            <p>Descubre la historia, filosofía y técnicas del arte marcial tradicional.</p>
+            <a href="#historia" class="btn">Comenzar</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="historia">
+            <h2>Historia del Karate</h2>
+            <div class="history-content">
+                <p>El Karate, o "camino de la mano vacía", es un arte marcial tradicional japonés con raíces en las
+                    islas Ryukyu (actual Okinawa). Su desarrollo se remonta al Reino de Ryukyu, donde las artes
+                    marciales
+                    indígenas conocidas como "Te" (mano) fueron influenciadas por el Kenpo chino, introducido por
+                    familias
+                    chinas que se establecieron en la isla en el siglo XIV.</p>
+                <p>Debido a la prohibición de armas impuesta por el clan Shimazu tras la invasión de 1609, los
+                    okinawenses
+                    perfeccionaron el combate sin armas y el uso de herramientas agrícolas como armas (Kobudo). A
+                    principios
+                    del siglo XX, maestros como Gichin Funakoshi llevaron el Karate a la isla principal de Japón y lo
+                    modernizaron, incorporando el sistema de grados (kyu/dan) y el uniforme (gi) influenciados por el
+                    Judo.
+                </p>
+            </div>
+        </section>
+
+        <h2 id="estilos">Principales Estilos de Karate</h2>
+        <p>Existen cuatro estilos principales reconocidos por la Federación Mundial de Karate (WKF), cada uno con
+            sus características únicas y katas asociados.</p>
+
+        <div class="styles-grid">
+            <article id="shotokan" class="style-card">
+                <h3>1. Shotokan</h3>
+                <p>Fundado por Gichin Funakoshi. Se caracteriza por posturas bajas y amplias, y técnicas lineales y
+                    potentes. Enfatiza la distancia larga y el kime (foco).</p>
+                <h4>Katas Shotokan:</h4>
+                <div class="kata-list">
+                    <h4 class="kata-category">Katas Inferiores (Grados Kyu)</h4>
+                    <details>
+                        <summary>Heian Shodan <span class="kata-belt yellow">8º Kyu - Amarillo</span></summary>
+                        <div class="kata-steps">
+                            <p>El primer kata de la serie Heian. 21 movimientos.</p>
+                            <ol>
+                                <li><strong>Prepraración:</strong> Posición natural (Hachiji-dachi).</li>
+                                <li>Mirar a la izquierda, paso con pie izquierdo a Zenkutsu-dachi, bloqueo bajo
+                                    izquierdo (Gedan Barai).</li>
+                                <li>Paso adelante con pie derecho a Zenkutsu-dachi, puñetazo medio derecho (Oi-Zuki).
+                                </li>
+                                <li>Mirar atrás (derecha), giro de 180° con pie derecho a Zenkutsu-dachi, bloqueo bajo
+                                    derecho (Gedan Barai). Tetsu-ui (golpe martillo) retirando el pie derecho a
+                                    Renoji-dachi.</li>
+                                <li>Paso adelante con pie izquierdo a Zenkutsu-dachi, puñetazo medio izquierdo
+                                    (Oi-Zuki).</li>
+                                <li>Mirar a la izquierda (90°), paso con pie izquierdo a Zenkutsu-dachi, bloqueo bajo
+                                    izquierdo (Gedan Barai).</li>
+                                <li>Paso adelante, bloqueo alto derecho (Age-Uke).</li>
+                                <li>Paso adelante, bloqueo alto izquierdo (Age-Uke).</li>
+                                <li>Paso adelante, bloqueo alto derecho (Age-Uke). <strong>¡KIAI!</strong></li>
+                                <li>Giro de 270° a la izquierda, Zenkutsu-dachi, bloqueo bajo izquierdo (Gedan Barai).
+                                </li>
+                                <li>Paso adelante, puñetazo medio derecho (Oi-Zuki).</li>
+                                <li>Giro de 180° a la derecha, Zenkutsu-dachi, bloqueo bajo derecho (Gedan Barai).</li>
+                                <li>Paso adelante, puñetazo medio izquierdo (Oi-Zuki).</li>
+                                <li>Giro de 90° a la izquierda, Zenkutsu-dachi, bloqueo bajo izquierdo (Gedan Barai).
+                                </li>
+                                <li>Paso adelante, puñetazo medio derecho (Oi-Zuki).</li>
+                                <li>Paso adelante, puñetazo medio izquierdo (Oi-Zuki).</li>
+                                <li>Paso adelante, puñetazo medio derecho (Oi-Zuki). <strong>¡KIAI!</strong></li>
+                                <li>Giro de 270° a la izquierda a Kokutsu-dachi (posición atrasada), bloqueo mano de
+                                    cuchillo izquierdo (Shuto-Uke).</li>
+                                <li>Paso a 45° derecha, Kokutsu-dachi, bloqueo mano de cuchillo derecho (Shuto-Uke).
+                                </li>
+                                <li>Giro a 45° derecha (hacia atrás), Kokutsu-dachi, bloqueo mano de cuchillo derecho
+                                    (Shuto-Uke).</li>
+                                <li>Paso a 45° izquierda, Kokutsu-dachi, bloqueo mano de cuchillo izquierdo (Shuto-Uke).
+                                </li>
+                                <li><strong>Fin:</strong> Volver a posición natural (Yoi).</li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Heian Nidan <span class="kata-belt orange">7º Kyu - Naranja</span></summary>
+                        <div class="kata-steps">
+                            <p>Segundo kata. Introduce patadas y más técnicas de mano abierta. 26 movimientos.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Bloqueo doble superior/lateral (Haiwan-Uke) en Kokutsu-dachi izquierdo.</li>
+                                <li>Golpe de puño invertido y bloqueo simultáneo.</li>
+                                <li>Bloqueo doble (Haiwan-Uke) al otro lado.</li>
+                                <li>Patada lateral y puño de revés simultáneo (Yoko Geri / Uraken).</li>
+                                <li>Mano de espada (Shuto-Uke) en Kokutsu-dachi (3 veces avanzando).</li>
+                                <li>Punta de dedos (Nukite) en Zenkutsu-dachi. <strong>¡KIAI!</strong></li>
+                                <li>Giros con bloqueos de mano de espada (Shuto-Uke).</li>
+                                <li>Bloqueo interior (Uchi-Uke) y patada frontal (Mae-Geri).</li>
+                                <li>Bloqueo alto (Age-Uke) finalizando con movimientos de defensa.
+                                    <strong>¡KIAI!</strong>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Heian Sandan <span class="kata-belt green">6º Kyu - Verde</span></summary>
+                        <div class="kata-steps">
+                            <p>Tercer kata. Introduce la posición de jinete (Kiba-dachi). 20 movimientos.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Bloqueo medio interior (Uchi-Uke) en Kokutsu-dachi.</li>
+                                <li>Bloqueo doble bajo/interior.</li>
+                                <li>Mismo movimiento al lado contrario.</li>
+                                <li>Bloqueo reforzado (Morote-Uke).</li>
+                                <li>Lanza de mano (Nukite), giro y golpe de martillo (Tetsui).</li>
+                                <li>Paso al frente con puñetazo (Oi-Zuki). <strong>¡KIAI!</strong></li>
+                                <li>Posición de jinete (Kiba-dachi) con golpes de codo (Empi) y revés.</li>
+                                <li>Finaliza con golpes de codo y puño sobre el hombro. <strong>¡KIAI!</strong></li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Heian Yondan <span class="kata-belt blue">5º Kyu - Azul</span></summary>
+                        <div class="kata-steps">
+                            <p>Cuarto kata. Introduce patadas laterales y bloqueos en cruz (Juji-Uke). 27 movimientos.
+                            </p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Bloqueo "abrir cortinas" (Haiwan-Uke) levantando rodillas.</li>
+                                <li>Bloqueo en cruz bajo (Juji-Uke).</li>
+                                <li>Patada lateral (Yoko Geri) con golpe de puño revés.</li>
+                                <li>Golpe de codo frontal (Mae-Empi).</li>
+                                <li>Patadas frontales y golpes de reves consecutivos. <strong>¡KIAI!</strong></li>
+                                <li>Bloqueos Shuto-Uke y agarres de cabeza con rodillazo (Hiza-Geri).
+                                    <strong>¡KIAI!</strong>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Heian Godan <span class="kata-belt blue">4º Kyu - Azul/Morado</span></summary>
+                        <div class="kata-steps">
+                            <p>Quinto kata. Incluye un salto y técnicas variadas. 23 movimientos.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Bloqueo interior y puñetazo reverso (Uchi-Uke / Gyaku-Zuki).</li>
+                                <li>Posición de pies juntos con postura de agua (Mizu-Nagare).</li>
+                                <li>Patada creciente (Mikazuki-Geri).</li>
+                                <li>Salto en el aire con bloqueo en cruz (Tobi-Komi). <strong>¡KIAI!</strong></li>
+                                <li>Bloqueos avanzados y finalización en posiciones bajas. <strong>¡KIAI!</strong></li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Tekki Shodan <span class="kata-belt brown">3º Kyu - Marrón</span></summary>
+                        <div class="kata-steps">
+                            <p>Primer kata de la serie Tekki. Se realiza integramente en Kiba-dachi lateral.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Musubi-dachi, Yoi con manos cruzadas frente al cuerpo.</li>
+                                <li>Mirar a la derecha, cruzar pie izq. sobre der. (Kosa-dachi).</li>
+                                <li>Levantar rodilla der., caer en Kiba-dachi con bloqueo haishu-uke (dorso mano).</li>
+                                <li>Golpe de codo izq. (Empi) sobre palma derecha.</li>
+                                <li>Bloqueo bajo derecho (Gedan Barai) mirando a la izquierda con "taza y plato".</li>
+                                <li>Cruzar pie der. sobre izq. (Kosa-dachi).</li>
+                                <li>Levantar rodilla izq., caer en Kiba-dachi con bloqueo haishu-uke.</li>
+                                <li>Golpe de codo der. (Empi) sobre palma izquierda.</li>
+                                <li>Bloqueo bajo izquierdo (Gedan Barai) mirando a la derecha.</li>
+                                <li>Golpe de doble puño lateral tras "taza y plato". <strong>¡KIAI!</strong></li>
+                                <li>Bloqueo de barrido (Nagashi-uke) izq. lento.</li>
+                                <li>Golpe de codo derecho, golpe de gancho (Kagi-zuki) izquierdo.</li>
+                                <li>Bloqueo de barrido (Nagashi-uke) der. lento.</li>
+                                <li>Golpe de codo izquierdo, golpe de gancho (Kagi-zuki) derecho.
+                                    <strong>¡KIAI!</strong>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <h4 class="kata-category">Katas Superiores (Grados Dan y Kyu Altos)</h4>
+                    <details>
+                        <summary>Bassai Dai <span class="kata-belt brown">2º/1º Kyu - Marrón</span></summary>
+                        <div class="kata-steps">
+                            <p>Kata poderoso caracterizado por bloqueos fuertes y cambios de dirección.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi con puño derecho envuelto por mano izquierda.</li>
+                                <li>Salto adelante a Kosa-dachi con bloqueo reforzado derecho.</li>
+                                <li>Giro a Zenkutsu-dachi con bloqueo interior izquierdo (Uchi-uke).</li>
+                                <li>Bloqueo interior derecho reverso (Gyaku-uchi-uke).</li>
+                                <li>Bloqueo exterior izquierdo (Soto-uke).</li>
+                                <li>Bloqueo interior derecho desde Hanmi.</li>
+                                <li>Serie de bloqueos de espada (Shuto-uke) avanzando en Kokutsu-dachi.</li>
+                                <li>Agarre y patada de pisotón (Fumikomi). <strong>¡KIAI!</strong></li>
+                                <li>Bloqueos Shuto-uke continuos.</li>
+                                <li>Doble bloqueo ascendente (Morote-age-uke).</li>
+                                <li>Puñetazos directo y reverso.</li>
+                                <li>Posición de grulla y patada lateral.</li>
+                                <li>Doble golpe de "montaña" (Yama-zuki).</li>
+                                <li>Finaliza con giro y Shuto-uke. <strong>¡KIAI!</strong></li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Kanku Dai <span class="kata-belt black">Shodan - Negro</span></summary>
+                        <div class="kata-steps">
+                            <p>Kata largo y acrobático. Comienza mirando al cielo.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Manos forman un triángulo, elevar lentamente mirando al
+                                    cielo.</li>
+                                <li>Separar manos bruscamente y bajar en círculo (Kaishin).</li>
+                                <li>Bloqueo superior espalda (Haiwan-uke) a izquierda y derecha.</li>
+                                <li>Bloqueo medio (Tate-shuto) y puñetazo derecho.</li>
+                                <li>Combinación de bloqueos y saltos (Fumikomi).</li>
+                                <li>Patada lateral (Yoko-geri) y golpe de revés (Uraken).</li>
+                                <li>Famoso salto (Tobi-geri) casi al final.</li>
+                                <li>Termina con posición inicial de triángulo.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Jion <span class="kata-belt black">Shodan - Negro</span></summary>
+                        <div class="kata-steps">
+                            <p>Kata de raíces chinas, enfatiza la estabilidad y fuerza básica.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Jiai no Kamae (mano izq sobre puño der al mentón).</li>
+                                <li>Paso atrás Zenkutsu-dachi, bloqueo interior y bajo simultáneo.</li>
+                                <li>Bloqueo de cuña (Kakiwake-uke) y patada frontal (Mae-geri).</li>
+                                <li>Puñetazo avanzado (Oi-Zuki).</li>
+                                <li>Serie de puñetazos dobles (Ren-zuki).</li>
+                                <li>Bloqueo alto (Age-uke) y puñetazo reverso.</li>
+                                <li>Golpes de palma (Teisho) avanzando en Kiba-dachi.</li>
+                                <li>Finaliza con fuerte bloqueo bajo y postura firme.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Empi <span class="kata-belt black">Shodan - Negro</span></summary>
+                        <div class="kata-steps">
+                            <p>Kata rápido y ágil, imita el vuelo de una golondrina.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Puño derecho vertical en palma izquierda a la cadera.</li>
+                                <li>Bloqueo bajo (Gedan-barai) cayendo sobre rodilla derecha.</li>
+                                <li>Levantarse y bloqueo bajo hacia el otro lado.</li>
+                                <li>Gancho (Kagi-zuki) en Kiba-dachi.</li>
+                                <li>Combinación de agarre de pelo y golpe descendente (Otoshi-zuki).</li>
+                                <li>Movimientos rápidos de subida y bajada.</li>
+                                <li>Salto giratorio de 360° (Kaiten-tobi) con Kiai.</li>
+                                <li>Aterrizaje en Kokutsu-dachi con Shuto-uke.</li>
+                            </ol>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <article id="goju-ryu" class="style-card animate-on-scroll">
+                <h3>2. Goju-ryu</h3>
+                <p>Fundado por Chojun Miyagi. Significa "Estilo duro y suave". Combina técnicas circulares y respiración
+                    profunda (Ibuki) con golpes potentes de corta distancia.</p>
+                <h4>Katas Goju-ryu:</h4>
+                <div class="kata-list">
+                    <h4 class="kata-category">Katas Inferiores (Grados Kyu)</h4>
+                    <details>
+                        <summary>Gekisai Dai Ichi <span class="kata-belt">Kyu - Básico</span></summary>
+                        <div class="kata-steps">
+                            <p>Kata básico de ataque y defensa ("Atacar y Destruir 1").</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Paso adelante con golpe alto nivel cara (Jodan-zuki).</li>
+                                <li>Bloqueo alto (Jodan-uke).</li>
+                                <li>Patada frontal (Mae-geri).</li>
+                                <li>Golpe de codo (Empi).</li>
+                                <li>Bloqueo bajo y golpe de puño reverso.</li>
+                                <li>Giro y repetición hacia el otro lado.</li>
+                                <li>Finaliza con bloqueo doble y Kiai.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Gekisai Dai Ni <span class="kata-belt">Kyu - Básico</span></summary>
+                        <div class="kata-steps">
+                            <p>Segundo kata básico ("Atacar y Destruir 2"). Introduce manos abiertas.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Similar a Dai Ichi pero introduce técnicas de mano abierta (Shuto).</li>
+                                <li>Avance con golpes de puño.</li>
+                                <li>Bloqueos circulares (Mawashi-uke).</li>
+                                <li>Patadas frontales y golpes de codo.</li>
+                                <li>Finalización con posturas neko-ashi-dachi (gato).</li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <h4 class="kata-category">Katas Superiores (Grados Dan)</h4>
+                    <details>
+                        <summary>Saifa <span class="kata-belt">Intermedio/Avanzado</span></summary>
+                        <div class="kata-steps">
+                            <p>"Desgarrar y romper". Introduce técnicas de escape y golpes de martillo.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Musubi-dachi.</li>
+                                <li>Pasos laterales con bloqueos de agarre.</li>
+                                <li>Patada frontal y golpe de martillo (Tetsui) simultáneo.</li>
+                                <li>Zafarse de agarres de muñeca.</li>
+                                <li>Golpes dobles de puño (Morote-zuki).</li>
+                                <li>Postura de garza y golpe de revés (Uraken).</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Seiyunchin <span class="kata-belt">Avanzado</span></summary>
+                        <div class="kata-steps">
+                            <p>"Controlar y tirar". Se realiza principalmente en Shiko-dachi. No tiene patadas.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Apertura lenta en Shiko-dachi con movimientos de respiración.</li>
+                                <li>Bloqueos tirando del oponente hacia sí.</li>
+                                <li>Golpes de "uppercut" (Ura-zuki).</li>
+                                <li>Giros bajos manteniendo la postura de jinete.</li>
+                                <li>Agarres y golpes de codo ascendentes.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Shisochin <span class="kata-belt">Avanzado</span></summary>
+                        <div class="kata-steps">
+                            <p>"Cuatro direcciones de conflicto". Combina manos abiertas y cerradas.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Sanchin-dachi.</li>
+                                <li>Ataque a cuatro direcciones con manos abiertas (Nukite).</li>
+                                <li>Bloqueos de brazo cruzado.</li>
+                                <li>Rotura de agarres y golpes de articulación.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Sanseru <span class="kata-belt">Avanzado</span></summary>
+                        <div class="kata-steps">
+                            <p>"Treinta y seis". Enfatiza el combate a corta distancia y patadas bajas (Kansetsu-geri).
+                            </p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Postura alta.</li>
+                                <li>Avance con bloqueos medios y golpes de puño.</li>
+                                <li>Patadas a la rodilla (Kansetsu-geri).</li>
+                                <li>Defensas contra patadas bajas.</li>
+                                <li>Movimientos explosivos tras calma.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Sepai <span class="kata-belt">Avanzado</span></summary>
+                        <div class="kata-steps">
+                            <p>"Dieciocho". Técnicas de evasión y engaño.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Movimientos diagonales evasivos.</li>
+                                <li>Ataques a los ojos y zonas blandas.</li>
+                                <li>Patadas bajas y giros rápidos.</li>
+                                <li>Finalización con respiración controlada.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Kururunfa <span class="kata-belt">Superior</span></summary>
+                        <div class="kata-steps">
+                            <p>"Mantener el terreno y destruir". Movimientos suaves que se tornan duros.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Musubi-dachi.</li>
+                                <li>Desplazamientos en Neko-ashi-dachi.</li>
+                                <li>Bloqueos suaves desviando fuerza.</li>
+                                <li>Patadas laterales (Yoko-geri) a las articulaciones.</li>
+                                <li>Proyecciones y derribos imaginarios.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Sesan <span class="kata-belt">Superior</span></summary>
+                        <div class="kata-steps">
+                            <p>"Trece manos". Combate pesado y fuerte.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Sanchin-dachi.</li>
+                                <li>Golpes cortos y rápidos repetitivos.</li>
+                                <li>Patadas frontales bajas.</li>
+                                <li>Rodillazos y bloqueos de presión.</li>
+                                <li>Final explosivo.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Suparinpei <span class="kata-belt">Superior</span></summary>
+                        <div class="kata-steps">
+                            <p>"Ciento ocho manos". El kata más largo de Goju-ryu.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Respiración profunda.</li>
+                                <li>Secuencia larga de combinaciones en todas direcciones.</li>
+                                <li>Uso extensivo de Sanchin-dachi y Shiko-dachi.</li>
+                                <li>Múltiples Kiais.</li>
+                                <li>Repetición de secuencias en diferentes ángulos.</li>
+                                <li>Salto giratorio de 360 grados (en algunas variaciones).</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Sanchin <span class="kata-belt">Fundamental</span></summary>
+                        <div class="kata-steps">
+                            <p>Kata respiratoria fundamental ("Tres Batallas"). Tensión dinámica.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Sanchin-dachi. Respiración sonora (Ibuki).</li>
+                                <li>Paso adelante en semicírculo.</li>
+                                <li>Bloqueo medio y golpe de puño lento con tensión.</li>
+                                <li>Repetición de pasos y golpes manteniendo tensión total.</li>
+                                <li>Giro "Mawatte" manteniendo la postura.</li>
+                                <li>No tiene Kiai, el enfoque es la respiración y la fuerza interna.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Tensho <span class="kata-belt">Fundamental</span></summary>
+                        <div class="kata-steps">
+                            <p>Contraparte suave de Sanchin ("Manos Rotatorias").</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Sanchin-dachi.</li>
+                                <li>Movimientos fluidos de muñeca y manos abiertas.</li>
+                                <li>Bloqueos circulares suaves (Kake-uke).</li>
+                                <li>Respiración profunda pero fluida.</li>
+                                <li>Enfatiza la recepción y redirección de energía.</li>
+                            </ol>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <article id="wado-ryu" class="style-card animate-on-scroll">
+                <h3>3. Wado-ryu</h3>
+                <p>Fundado por Hironori Otsuka. Significa "Camino de la paz/armonía". Mezcla karate de Okinawa con
+                    Jujutsu japonés. Enfatiza la evasión (taisabaki) y la velocidad sobre la fuerza bruta.</p>
+                <h4>Katas Wado-ryu:</h4>
+                <div class="kata-list">
+                    <h4 class="kata-category">Katas Inferiores (Pinan)</h4>
+                    <details>
+                        <summary>Pinan Shodan <span class="kata-belt">Kyu</span></summary>
+                        <div class="kata-steps">
+                            <p>Kata básico inicial. Similar a Heian Nidan de Shotokan.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Bloqueos superiores con defensa de puño (Tettsui).</li>
+                                <li>Combinación de golpes directos (Jun-zuki).</li>
+                                <li>Patada lateral (Sokuto) con golpe de revés (Uraken).</li>
+                                <li>Movimientos de mano de espada (Shuto) en postura 'gato' (Neko-ashi/Mahanmi).</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Pinan Nidan <span class="kata-belt">Kyu</span></summary>
+                        <div class="kata-steps">
+                            <p>Segundo kata básico. Similar a Heian Shodan de Shotokan.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Giro a la izquierda con bloqueo bajo (Gedan-barai) y golpe de martillo.</li>
+                                <li>Avanzar con puñetazo (Oi-zuki).</li>
+                                <li>Serie de bloqueos altos (Jodan-uke).</li>
+                                <li>Bloqueos bajos y puñetazos en giros.</li>
+                                <li>Golpes de mano abierta (Shuto) en diagonal.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Pinan Sandan <span class="kata-belt">Kyu</span></summary>
+                        <div class="kata-steps">
+                            <p>Tercer kata básico. Introduce torsiones y bloqueos medios.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Bloqueo medio (Uchi-uke) con salida lateral.</li>
+                                <li>Zafarse de agarres con movimientos circulares.</li>
+                                <li>Golpe de codo (Empi) y revés (Uraken).</li>
+                                <li>Paso cruzado y giro con codo.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Pinan Yondan <span class="kata-belt">Kyu</span></summary>
+                        <div class="kata-steps">
+                            <p>Cuarto kata básico. Técnicas de manos abiertas y patadas.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Bloqueo haishu-uke (dorso de mano) lento.</li>
+                                <li>Patada lateral y puño simultáneo.</li>
+                                <li>Golpe de codo frontal (Mae-empi).</li>
+                                <li>Patada frontal y salto con Kiai.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Pinan Godan <span class="kata-belt">Kyu</span></summary>
+                        <div class="kata-steps">
+                            <p>Quinto kata básico. Introduce saltos y defensas.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Bloqueo interior y golpe de puño reverso.</li>
+                                <li>Postura de "gancho" y patada creciente.</li>
+                                <li>Salto con bloqueo cruzado (Juji-uke).</li>
+                                <li>Defensa contra agarre y proyección.</li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <h4 class="kata-category">Katas Superiores</h4>
+                    <details>
+                        <summary>Kushanku <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Mirar al cielo (versión Wado). Más dinámico y alto que la versión Shotokan.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Apertura mirando al cielo.</li>
+                                <li>Separación de manos en círculo.</li>
+                                <li>Patada frontal voladora (Tobi-geri).</li>
+                                <li>Serie de ataques rápidos de mano (Shuto/Nukite).</li>
+                                <li>Agacharse (esquiva) y barrido.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Naihanchi <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Combate lateral. Fundamental en Wado-ryu.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Naihanchi-dachi.</li>
+                                <li>Cruce de piernas y ataque lateral de codo.</li>
+                                <li>Bloqueo bajo y golpe de revés.</li>
+                                <li>"Olas de retorno" (Nami-gaeshi) defensas de pie.</li>
+                                <li>Mirada y tensión se mantienen laterales.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Seishan <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>"Trece manos". Combina movimientos lentos y rápidos.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Seishan-dachi.</li>
+                                <li>Avance con tres pasos de "media luna" y puñetazos.</li>
+                                <li>Giro rápido y defensa de montaña.</li>
+                                <li>Patada frontal rápida y retroceso defensivo.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Chinto <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Combate contra grulla. Equilibrio sobre una pierna (Sagi-ashi-dachi).</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Saludo distintivo.</li>
+                                <li>Posturas de grulla (una pierna).</li>
+                                <li>Defensas contra ataques bajos.</li>
+                                <li>Patadas voladoras (Tobi-geri) y giros.</li>
+                                <li>Movimientos diagonales fluidos.</li>
+                            </ol>
+                        </div>
+                    </details>
+                </div>
+            </article>
+
+            <article id="shito-ryu" class="style-card animate-on-scroll">
+                <h3>4. Shito-ryu</h3>
+                <p>Fundado por Kenwa Mabuni. Combina las características de los estilos Shuri-te (rápidos y lineales) y
+                    Naha-te (fuertes y circulares). Es el estilo con mayor número de katas.</p>
+                <h4>Katas Shito-ryu (Selección):</h4>
+                <div class="kata-list">
+                    <h4 class="kata-category">Katas Inferiores</h4>
+                    <details>
+                        <summary>Pinan 1-5 <span class="kata-belt">Kyu</span></summary>
+                        <div class="kata-steps">
+                            <p>Serie básica Pinan. Equivalente a Heian.</p>
+                            <ol>
+                                <li><strong>Pinan Nidan:</strong> (Generalmente el primero) Bloqueos altos y
+                                    martillazos.</li>
+                                <li><strong>Pinan Shodan:</strong> Defensas bajas y técnicas de mano abierta.</li>
+                                <li><strong>Pinan Sandan:</strong> Uso de codos y torsiones.</li>
+                                <li><strong>Pinan Yondan:</strong> Patadas laterales y bloqueos en cruz.</li>
+                                <li><strong>Pinan Godan:</strong> Saltos y técnicas variadas.</li>
+                            </ol>
+                        </div>
+                    </details>
+
+                    <h4 class="kata-category">Katas Superiores</h4>
+                    <details>
+                        <summary>Bassai Dai/Sho <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Romper la fortaleza. Versiones Mayor (Dai) y Menor (Sho).</p>
+                            <ol>
+                                <li><strong>Dai:</strong> Fuerza explosiva, bloqueos morote-uke.</li>
+                                <li><strong>Sho:</strong> Defensa contra palo (Bo), movimientos más circulares.</li>
+                                <li>Ambos enfatizan el combate a corta distancia y la penetración de defensas.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Chatanyara Kushanku <span class="kata-belt black">Dan - Maestría</span></summary>
+                        <div class="kata-steps">
+                            <p>Kata antiguo y elegante, característico del estilo Shito-ryu. Combina movimientos lentos
+                                y respiratorios con explosiones de velocidad.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Saludo y posición de alerta (Yoi).</li>
+                                <li>Apertura lenta con manos formando un triángulo (mirar a través), separando con
+                                    fuerza.</li>
+                                <li>Paso atrás con bloqueo doble (tewaza) lento.</li>
+                                <li>Avanzar con golpe de lanza (Nukite) rápido y kiai.</li>
+                                <li>Serie de virajes rápidos con bloqueos de mano abierta (Shuto-uke).</li>
+                                <li>Secuencia de patadas frontales (Mae-geri) seguidas de saltos rápidos.</li>
+                                <li>Movimiento característico de "barrer el suelo" seguido de un ataque bajo.</li>
+                                <li>Defensa contra ataque de palo (Bo) imaginario.</li>
+                                <li>Salto giratorio (Nidan-geri) con aterrizaje estable (Kiai).</li>
+                                <li>Serie final de bloqueos en cruz y posturas bajas (Neko-ashi-dachi).</li>
+                                <li>Retorno a la calma con respiración controlada y cierre.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Kosokun Dai <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Mirar al cielo. Versión Shito-ryu de Kanku Dai.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Apertura mirando al cielo.</li>
+                                <li>Movimientos muy largos y estéticos.</li>
+                                <li>Incluye saltos y trabajo de suelo.</li>
+                                <li>Gran variedad de técnicas (más de 60 movimientos).</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Niseishi <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Veinticuatro. Nijushiho en Shotokan.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Sanchin-dachi.</li>
+                                <li>Movimientos fluidos como olas.</li>
+                                <li>Golpes de codo rápidos (Empi).</li>
+                                <li>Defensa contra agarres laterales.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Matsukaze <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Viento de pino. Wankan en Shotokan.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Musubi-dachi.</li>
+                                <li>Kata corto pero complejo.</li>
+                                <li>Ataques a puntos vitales.</li>
+                                <li>Ritmo sincopado.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Jitte <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Diez manos. Técnicas contra palo.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Saludo de montaña.</li>
+                                <li>Uso principal de bloqueos de palma (Teisho).</li>
+                                <li>Defensas altas contra ataques descendentes.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Jiin <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Tierra del templo. Similar a Jion y Jitte.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Saludo de montaña.</li>
+                                <li>Giros repetidos en Kiba-dachi.</li>
+                                <li>Patadas frontales y puñetazos dobles.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Jion <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Sonido del templo. Kata de fuerza.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Saludo de montaña.</li>
+                                <li>Técnicas directas y fuertes.</li>
+                                <li>Bloqueos en Kiba-dachi (Kagi-zuki).</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Tomari Bassai <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Romper la fortaleza (estilo Tomari).</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Yoi.</li>
+                                <li>Mucho más fluido que Bassai Dai.</li>
+                                <li>Uso de shuto-uke (manos de espada) rápidos.</li>
+                                <li>Cambios de altura constantes.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Kururunfa <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Mantener y destruir. Kata de Naha-te.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Sanchin-dachi.</li>
+                                <li>Movimientos de escape (Tai-sabaki).</li>
+                                <li>Patadas bajas (Kansetsu-geri).</li>
+                                <li>Lucha cuerpo a cuerpo.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Seipai <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Dieciocho. Engaño y fluidez.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Seishan-dachi.</li>
+                                <li>Técnicas de distracción.</li>
+                                <li>Ataques a los testículos y ojos.</li>
+                                <li>Giros rápidos.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Papuren <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Ocho pasos. Grulla Blanca.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Saludo chino.</li>
+                                <li>Movimientos de manos muy rápidos y vibrantes.</li>
+                                <li>Sonidos de respiración rápidos.</li>
+                                <li>Técnicas de picoteo y alas.</li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Anan <span class="kata-belt">Dan</span></summary>
+                        <div class="kata-steps">
+                            <p>Paz del sur. Ryuei-ryu original.</p>
+                            <ol>
+                                <li><strong>Inicio:</strong> Heiko-dachi.</li>
+                                <li>Movimientos circulares de manos.</li>
+                                <li>Ataques dobles de puño.</li>
+                                <li>Posturas largas y transiciones explosivas.</li>
+                            </ol>
+                        </div>
+                    </details>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- ===== Sección de Inscripción ===== -->
+    <section id="inscripcion" class="inscription-section">
+        <div class="inscription-container">
+            <h2>Inscripción al Dojo</h2>
+            <p class="inscription-subtitle">Comienza tu camino en el Karate. Rellena el formulario para inscribirte.</p>
+
+            <!-- Barra de progreso del formulario -->
+            <div class="form-progress">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="progress-text" id="progressText">0 de 6 campos completados</span>
+            </div>
+
+            <form id="inscripcionForm" class="inscription-form" novalidate>
+                <!-- Nombre Completo -->
+                <div class="form-group" id="group-nombre">
+                    <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido(s)" required
+                            minlength="5" maxlength="80" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñÜü]+(\s[A-Za-zÁÉÍÓÚáéíóúÑñÜü]+)+$"
+                            autocomplete="name">
+                        <span class="field-icon" id="icon-nombre"></span>
+                    </div>
+                    <span class="char-counter" id="counter-nombre">0 / 80</span>
+                    <span class="field-error" id="error-nombre"></span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group" id="group-email">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required maxlength="120"
+                            autocomplete="email">
+                        <span class="field-icon" id="icon-email"></span>
+                    </div>
+                    <span class="field-error" id="error-email"></span>
+                </div>
+
+                <!-- Confirmar Email -->
+                <div class="form-group" id="group-emailConfirm">
+                    <label for="emailConfirm">Confirmar Email <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <input type="email" id="emailConfirm" name="emailConfirm" placeholder="Repite tu email" required
+                            maxlength="120" autocomplete="email">
+                        <span class="field-icon" id="icon-emailConfirm"></span>
+                    </div>
+                    <span class="field-error" id="error-emailConfirm"></span>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="form-group" id="group-telefono">
+                    <label for="telefono">Teléfono <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 612 345 678" required
+                            minlength="9" maxlength="20" autocomplete="tel">
+                        <span class="field-icon" id="icon-telefono"></span>
+                    </div>
+                    <span class="field-hint">Formato: +34 6XX XXX XXX o 6XXXXXXXX</span>
+                    <span class="field-error" id="error-telefono"></span>
+                </div>
+
+                <div class="form-row">
+                    <!-- Estilo -->
+                    <div class="form-group" id="group-estilo">
+                        <label for="estilo">Estilo Preferido <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <select id="estilo" name="estilo" required>
+                                <option value="" disabled selected>Seleccionar...</option>
+                                <option value="Shotokan">Shotokan</option>
+                                <option value="Goju-ryu">Goju-ryu</option>
+                                <option value="Wado-ryu">Wado-ryu</option>
+                                <option value="Shito-ryu">Shito-ryu</option>
+                            </select>
+                            <span class="field-icon" id="icon-estilo"></span>
+                        </div>
+                        <span class="field-error" id="error-estilo"></span>
+                    </div>
+
+                    <!-- Nivel -->
+                    <div class="form-group" id="group-nivel">
+                        <label for="nivel">Nivel <span class="required">*</span></label>
+                        <div class="input-wrapper">
+                            <select id="nivel" name="nivel" required>
+                                <option value="" disabled selected>Seleccionar...</option>
+                                <option value="Principiante">Principiante</option>
+                                <option value="Intermedio">Intermedio</option>
+                                <option value="Avanzado">Avanzado</option>
+                            </select>
+                            <span class="field-icon" id="icon-nivel"></span>
+                        </div>
+                        <span class="field-error" id="error-nivel"></span>
+                    </div>
+                </div>
+
+                <!-- Aceptar Términos -->
+                <div class="form-group form-group-checkbox" id="group-terminos">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Acepto la <a href="#" onclick="event.preventDefault()">política de
+                                privacidad</a> y los <a href="#" onclick="event.preventDefault()">términos de uso</a>
+                            del dojo. <span class="required">*</span></span>
+                    </label>
+                    <span class="field-error" id="error-terminos"></span>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn" disabled>
+                    <span class="btn-text">🥋 Inscribirme</span>
+                    <span class="btn-loading" style="display:none;">⏳ Enviando...</span>
+                </button>
+
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Historia del Karate. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
