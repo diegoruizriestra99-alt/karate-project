@@ -6,10 +6,10 @@ const PORT = process.env.PORT || 3000;
 
 const fs = require('fs');
 
-// Configuración de metadatos dinámicos (Puedes cambiar "Madrid, España" por tu ciudad actual)
-const ciudadStr = "Madrid, España";
-const dynamicTitle = `Clases de Karate - Artes Marciales en ${ciudadStr} | Karate Dojo`;
-const dynamicDescription = `Únete a nuestras Clases de Karate y Artes Marciales en ${ciudadStr}. Aprende defensa personal, katas e historia en nuestro Karate Dojo.`;
+// Configuración de metadatos dinámicos SEO local (Oviedo, Asturias)
+const ciudadStr = "Oviedo, Asturias";
+const dynamicTitle = `Clases de Karate en Oviedo, Asturias | Artes Marciales y Defensa Personal - Karate Dojo`;
+const dynamicDescription = `🥋 Clases de Karate en Oviedo y Asturias. Aprende Shotokan, Goju-ryu y defensa personal con instructores titulados. ¡Inscríbete hoy en nuestro Dojo en Oviedo!`;
 
 // Ruta raíz con inyección dinámica de Metatags SEO
 app.get('/', (req, res) => {

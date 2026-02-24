@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Allow: /karate.html
 
-Sitemap: /sitemap.xml
+Sitemap: https://helpful-victory-production-c840.up.railway.app/sitemap.xml
