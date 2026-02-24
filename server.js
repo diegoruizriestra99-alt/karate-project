@@ -1,31 +1,23 @@
 const express = require('express');
-const cors = require('cors');
+const path = require('path');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Middlewares
-app.use(cors());
-app.use(express.json());
+// Servir archivos estáticos del directorio actual
+app.use(express.static(path.join(__dirname)));
 
-// Puerto dinámico para Render (USA EL PUERTO QUE ELLOS ASIGNAN O EL 3000)
-const PORT = process.env.PORT || 3000; // Puerto dinámico para Render
-
-// Ruta principal para que Render vea que funciona
+// Ruta raíz
 app.get('/', (req, res) => {
-    res.status(200).send({
-        status: 'ok',
-        message: '🥋 Servidor de Karate en línea y funcionando perfectamente'
-    });
+    res.sendFile(path.join(__dirname, 'karate.html'));
 });
 
-// Ruta de prueba para tu web
-app.get('/api/test', (req, res) => {
-    res.json({ mensaje: "Conexión establecida con el Dojo" });
+// Endpoint de salud
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
-// Arrancar el servidor
+// Iniciar servidor
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`✅ Servidor corriendo en el puerto ${PORT}`);
-});clsgit 
-//cambio
-// Despliegue final dojo
+    console.log(`Server listening on 0.0.0.0:${PORT}`);
+});
