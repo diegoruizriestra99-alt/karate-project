@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="google-site-verification" content="AgEjOy4BfbwDoyJBBhxuwJktXQ6RveKqouWpxcc2EBE" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende karate y artes marciales. Inscríbete en nuestra escuela de karate para todos los niveles, desde principiantes hasta avanzados. Mejora tu técnica y disciplina con los mejores maestros.">
+    <meta name="keywords" content="karate, artes marciales, defensa personal, Shotokan, Goju-ryu, Wado-ryu, Shito-ryu, dojo, entrenamiento, disciplina, artes marciales para niños, karate para adultos">
+    <meta name="author" content="Escuela de Karate">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://karate-project.onrender.com/">
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Escuela de Karate - Disciplina y Técnica">
+    <meta property="og:description" content="Únete a nuestra escuela de karate. Clases para todos los niveles y estilos.">
+    <meta property="og:image" content="https://karate-project.onrender.com/assets/og-image.jpg">
+    <meta property="og:url" content="https://karate-project.onrender.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Escuela de Karate - Disciplina y Técnica">
+    <meta name="twitter:description" content="Inscríbete hoy y comienza tu camino en el karate.">
+
+    <title>Escuela de Karate - Inscripciones Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🥋 Escuela de Karate</h1>
+            <p>Disciplina, Respeto y Técnica</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="inscripcion">
+            <h2>Formulario de Inscripción</h2>
+            <p>Completa tus datos para unirte a nuestro dojo.</p>
+
+            <form id="form-inscripcion">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono (opcional):</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. +34 600 000 000">
+                </div>
+
+                <div class="form-group">
+                    <label for="estilo">Estilo de Karate:</label>
+                    <select id="estilo" name="estilo" required>
+                        <option value="" disabled selected>Selecciona un estilo</option>
+                        <option value="Shotokan">Shotokan</option>
+                        <option value="Goju-ryu">Goju-ryu</option>
+                        <option value="Wado-ryu">Wado-ryu</option>
+                        <option value="Shito-ryu">Shito-ryu</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nivel">Tu Nivel:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="nivel" value="Principiante" required> Principiante</label>
+                        <label><input type="radio" name="nivel" value="Intermedio"> Intermedio</label>
+                        <label><input type="radio" name="nivel" value="Avanzado"> Avanzado</label>
+                    </div>
+                </div>
+
+                <button type="submit" id="btn-enviar">Enviar Inscripción</button>
+            </form>
+            <div id="mensaje-estado"></div>
+        </section>
+
+        <hr>
+
+        <section id="lista">
+            <h2>Alumnos Inscritos Recientemente</h2>
+            <button id="btn-cargar">Actualizar Lista</button>
+            <div class="tabla-container">
+                <table id="tabla-inscripciones">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Estilo</th>
+                            <th>Nivel</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-alumnos">
+                        <!-- Los datos se cargarán aquí -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Escuela de Karate. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
