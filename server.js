@@ -15,7 +15,8 @@ const DB_PATH = process.env.DB_PATH || path.join(__dirname, 'karate.db');
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname
+)));
 
 
 app.get('/', (req, res) => {
@@ -24,7 +25,6 @@ app.get('/', (req, res) => {
 app.get('/googleccb11994b589a2e5.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'googleccb11994b589a2e5.html'));
 });
-
 
 let db;
 let pool;
