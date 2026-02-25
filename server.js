@@ -1,45 +1,62 @@
 const express = require('express');
-const cors = require('cors');
-const initSqlJs = require('sql.js');
-const fs = require('fs');
 const path = require('path');
-const { Pool } = require('pg');
-
-
-// ===== Configuracion del servidor =====
 const app = express();
 const PORT = process.env.PORT || 3000;
-const DATABASE_URL = process.env.DATABASE_URL;
-const DB_PATH = process.env.DB_PATH || path.join(__dirname, 'karate.db');
 
-
-app.use(cors());
+// Middleware para procesar JSON y datos de formularios
 app.use(express.json());
-app.use(express.static(path.join(__dirname
-)));
+app.use(express.urlencoded({ extended: true }));
 
+// Servir archivos estáticos (CSS, JS, Imágenes) desde la raíz del proyecto
+app.use(express.static(path.join(__dirname)));
+
+// ==========================================
+// 1. RUTAS DE NAVEGACIÓN Y VERIFICACIÓN
+// ==========================================
+
+// Ruta principal: Entrega tu index.html (ya con la etiqueta meta de Google)
 app.get('/', (req, res) => {
- res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+// Ruta específica para el archivo de verificación de Google
+// IMPORTANTE: Sin espacios ni saltos de línea en la URL
 app.get('/googleccb11994b589a2e5.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'googleccb11994b589a2e5.html'));
 });
 
+// ==========================================
+// 2. API DE INSCRIPCIÓN (BACKEND)
+// ==========================================
 
-let db;
-let pool;
+app.post('/api/inscripcion', (req, res) => {
+    const { nombre, email, telefono, estilo, nivel } = req.body;
 
+    // Validación básica en el servidor (Seguridad Senior)
+    if (!nombre || !email || !telefono) {
+        return res.status(400).json({ 
+            error: 'Faltan campos obligatorios en el servidor.' 
+        });
+    }
 
-// ===== Inicializar base de datos =====
-async function initDB() {
-  if (DATABASE_URL) {
-    pool = new Pool({
-      connectionString: DATABASE_URL,
-      ssl: { rejectUnauthorized: false }
+    console.log(`🥋 Nueva inscripción recibida: ${nombre} - ${estilo}`);
+
+    // Aquí podrías guardar en una base de datos más adelante
+    res.status(200).json({ 
+        mensaje: 'Inscripción procesada correctamente.',
+        usuario: nombre 
     });
-    await pool.query(`
-      CREATE TABLE IF NOT EXISTS inscripciones (
-        id SERIAL PRIMARY KEY,
-        nombre TEXT NOT NULL,
-        email TEXT NOT NULL UNIQUE,
+});
+
+// ==========================================
+// 3. MANEJO DE ERRORES (404)
+// ==========================================
+app.use((req, res) => {
+    res.status(404).send('<h1>404 - Página no encontrada</h1><a href="/">Volver al inicio</a>');
+});
+
+// Iniciar servidor
+app.listen(PORT, () => {
+    console.log(`🚀 Servidor corriendo en: http://localhost:${PORT}`);
+    console.log(`📁 Directorio actual: ${__dirname}`);
+});
